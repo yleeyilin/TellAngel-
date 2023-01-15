@@ -1,4 +1,4 @@
-# TellAngel-
+# TellAngel_Bot
 Telegram bot that uses sentiment analysis to identify if a user is sending a mean or kind message. 
 The telegram bot stores the user's kindness scores across all group chats. 
 The score is initialised at 0.
