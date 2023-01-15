@@ -9,7 +9,7 @@ updater = Updater(${{ secrets.TOKEN }}, use_context = True)
 dispatcher= updater.dispatcher
 def start(update, context):
     update.message.reply_text("Hey, I am TellAngel, here to remind you to send kind messages to your precious friends. You are given a kindness score of 0. ")
-    update.message.reply_text("You can use me by adding me to your telegram group chats. With each kind message, I will increase your score by 1. However, if you send a mean message, your score will drop.")
+    update.message.reply_text("You can use me by adding me to your telegram group chats as admin. With each kind message, I will increase your score by 1. However, if you send a mean message, your score will drop.")
 def sentiment(update, context):
     conn = sqlite3.connect('scores.db')
     cursor = conn.cursor()
