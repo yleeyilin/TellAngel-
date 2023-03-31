@@ -11,6 +11,6 @@ However, a big limitation is that the users can manipulate the “kindness score
 ## Types of commands in a telegram bot
 For functions that includes interactions between users and bot, the functions should be falling between these two categories. 
 ### 1. Detects messages sent by user 
-dispatcher.add_handler(MessageHandler(Filters.text, {{name of function}})) 
+`dispatcher.add_handler(MessageHandler(Filters.text, {{name of function}}))` 
 ### 2. Called by a command 
-dispatcher.add_handler(CommandHandler('start', start))
+`dispatcher.add_handler(CommandHandler('start', start))`
